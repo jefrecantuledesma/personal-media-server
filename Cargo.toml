@@ -1,0 +1,13 @@
+[package]
+name = "http_server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bcrypt = { version = "0.15.1", features = ["js"] }
+rocket = { version = "0.5.0", features = ["json", "secrets"] }
+sqlx = { version = "0.7.4", features = ["postgres"] }
+tokio = { version = "1.36.0", features = ["fs", "io-util", "io-std"] }
+
